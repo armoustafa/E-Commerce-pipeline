@@ -1,0 +1,12 @@
+ecom_dbt/target/
+ecom_dbt/logs/
+ecom_dbt/seeds/
+ecom_dbt/analyses/
+ecom_dbt/macros/
+ecom_dbt/snapshots/
+logs/
+ecom_venv/
+airflow/*
+!airflow/dags/
+airflow/dags/__pycache__/
+.DS_Store

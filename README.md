@@ -19,7 +19,7 @@ ECommerce-project/
 ```
 
 ## Data Lineage
-![Data Lineage](DataLineage.png)
+![Data Lineage](/photos/DataLineage.png)
 
 ## Setup & Installation
 
@@ -73,7 +73,7 @@ airflow users create -u admin -f Admin -l User -r Admin -e admin@example.com -p 
    airflow webserver -p 8080
    ```
 3. Trigger `ecom_pipeline` in UI (`http://localhost:8080`).
-![airflow](airflow11.png)
+![airflow](/photos/airflow11.png)
 4. Verify:
    ```sql
    SELECT * FROM ECOMMERCE_DB.RAW.fact_sales LIMIT 5;

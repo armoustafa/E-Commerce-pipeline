@@ -1,7 +1,4 @@
-
-
-
-  SELECT
+SELECT
     InvoiceNo,
     StockCode,
     Description,
@@ -12,5 +9,5 @@
     TO_TIMESTAMP(InvoiceDate, 'YYYY-MM-DD HH24:MI:SS') AS InvoiceDate,
     UnitPrice,
     COALESCE(CustomerID, 'UNKNOWN') AS CustomerID
-  FROM ECOMMERCE_DB.RAW.raw_sales
+  FROM {{ source('ecommerce_raw', 'raw_sales') }}
   WHERE InvoiceNo IS NOT NULL

@@ -6,4 +6,3 @@ sources:
     schema: RAW
     tables:
       - name: raw_sales
-      - name: cleansed_sales

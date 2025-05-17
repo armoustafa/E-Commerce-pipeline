@@ -1,4 +1,4 @@
 SELECT DISTINCT
-  CustomerID
-FROM {{ source('ecommerce_raw', 'cleansed_sales') }}
+  CustomerID AS customer_key
+FROM {{ ref('cleansed_sales') }}
 WHERE CustomerID IS NOT NULL

@@ -10,3 +10,5 @@ airflow/*
 !airflow/dags/
 airflow/dags/__pycache__/
 .DS_Store
+DataLineage.png
+airflow11.png
